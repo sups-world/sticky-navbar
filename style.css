@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+.top-container {
+  background-image: url("https://images.unsplash.com/photo-1549608276-5786777e6587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  height: 100vh;
+  /* to show full image::background size cover */
+  background-size: cover;
+  /* to bring h1 tag to center */
+  display: flex;
+  /* horizontal center */
+  justify-content: center;
+  /* vertical center */
+  align-items: center;
+  /* to bring text to center */
+  text-align: center;
+}
+
+.top-container h1 {
+  color: whitesmoke;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+}
+
+.text {
+  margin: 50px 50px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  /* even when scrolling the position of navbar remains fixed */
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  /* to bring items to center */
+  align-items: center;
+  box-shadow: 0 4px 8px rgb(20, 20, 20, 0.5);
+}
+
+.navbar ul {
+  display: flex;
+  /* to remove bullets in lists */
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: black;
+}
+
+.navbar ul li a:hover {
+  color: red;
+}
+
+.navbar.active {
+  background-color: black;
+}
+
+.navbar.active ul li a {
+  color: white;
+}
